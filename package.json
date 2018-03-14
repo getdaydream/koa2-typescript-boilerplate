@@ -1,0 +1,28 @@
+{
+  "name": "koa2-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Koa2 boilerplate using TypeScript",
+  "scripts": {
+    "dev": "nodemon build/app.js",
+    "start": "cross-env NODE_ENV=production node build/app.js",
+    "build": "cross-env NODE_ENV=production tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.44",
+    "@types/koa-router": "^7.0.27",
+    "cross-env": "^5.1.4",
+    "nodemon": "^1.17.1",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.1.0",
+    "tslint-microsoft-contrib": "^5.0.3"
+  }
+}

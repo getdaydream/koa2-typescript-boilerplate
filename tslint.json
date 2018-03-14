@@ -1,0 +1,131 @@
+// tslint rules
+// https://palantir.github.io/tslint/rules/
+// 
+// based on tslint-config-airbnb
+// https://github.com/progre/tslint-config-airbnb/blob/9732a9ef0e6ac2d4a1240233f280c4d87b5069d2/tslint.js
+// 
+// two dependencies
+// tslint-eslint-rules:      https://github.com/buzinas/tslint-eslint-rules
+// tslint-microsoft-contrib: https://github.com/Microsoft/tslint-microsoft-contrib
+{
+    "extends": [
+        // tslint preset rules
+        "tslint:recommended",
+        "tslint-eslint-rules",
+        "tslint-microsoft-contrib"
+    ],
+    "rules": {
+        ////////////////////////////////////////////////
+        // tslint-microsoft-contrib
+        ///////////////////////////////////////////////
+        "no-backbone-get-set-outside-model": false,
+        "export-name": false,
+        "no-reserved-keywords": true,
+        // use const arr = [], instead of const arr = new Array()
+        "prefer-array-literal": true,
+        // Do not use insecure sources for random bytes. Use a secure random number generator instead. Bans all uses of Math.random and crypto.pseudoRandomBytes. Better alternatives are crypto.randomBytes and window.crypto.getRandomValues.
+        "insecure-random": false,
+        "no-suspicious-comment": false,
+        "no-multiline-string": false,
+        ////////////////////////////////////////////////
+        //  tslint-eslint-rules
+        ///////////////////////////////////////////////
+        // no space inside array
+        "array-bracket-spacing": [
+            true,
+            "never"
+        ],
+        // const obj = { foo: { zoo: 'bar' } };
+        "object-curly-spacing": [
+            true,
+            "always"
+        ],
+        ////////////////////////////////////////////////
+        //  tslint rules
+        ///////////////////////////////////////////////
+        "no-console": false,
+        "eofline": false,
+        "no-boolean-literal-compare": false,
+        "strict-boolean-expressions": false,
+        "no-trailing-whitespace": false,
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "prefer-const": true,
+        "no-var-keyword": true,
+        "object-literal-sort-keys": false,
+        // allow use 
+        "no-relative-imports": false,
+        // https://palantir.github.io/tslint/rules/object-literal-key-quotes/
+        // add quote for object key when needed
+        "object-literal-key-quotes": [
+            true,
+            "as-needed"
+        ],
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "only-arrow-functions": true,
+        // disallow input parameter reassignment
+        "no-parameter-reassignment": true,
+        "no-duplicate-imports": true,
+        "one-variable-per-declaration": [
+            true,
+            "ignore-for-loop"
+        ],
+        // allow use increment and decrement
+        "no-increment-decrement": false,
+        "triple-equals": [
+            true
+        ],
+        // force brackets for if/do/for/while
+        "curly": [
+            true,
+            "ignore-same-line"
+        ],
+        // comment must start with space
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "align": false,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-preblock"
+        ],
+        // https://palantir.github.io/tslint/rules/no-construct/
+        "no-construct": true,
+        "radix": true,
+        "no-this-assignment": true,
+        // use T[], instead of Array<T>
+        "array-type": [
+            true,
+            "array"
+        ],
+        // Warns for an awaited value that is not a Promise.
+        "await-promise": false,
+        "linebreak-style": [
+            true,
+            "CRLF"
+        ],
+        "number-literal-format": false,
+        "typedef": false
+    }
+}
