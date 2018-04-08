@@ -1,4 +1,4 @@
-# koa2-boilerplate
+# koa2-typescript-boilerplate
 
 > A  boilerplate of koa v2 using typescript.
 
