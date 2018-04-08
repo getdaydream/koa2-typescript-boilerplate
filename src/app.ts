@@ -11,7 +11,7 @@ import { router } from './route/index';
 const app = new Koa();
 
 // allow cross domain
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: '*' }));  
 
 // 
 app.use(postBody());

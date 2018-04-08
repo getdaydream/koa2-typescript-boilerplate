@@ -19,6 +19,7 @@
         // tslint-microsoft-contrib
         ///////////////////////////////////////////////
         "no-backbone-get-set-outside-model": false,
+        "possible-timing-attack": false,
         "export-name": false,
         "no-reserved-keywords": true,
         // use const arr = [], instead of const arr = new Array()
@@ -94,11 +95,11 @@
         "indent": [
             true,
             "spaces",
-            4
+            2
         ],
         "ter-indent": [
             true,
-            4,
+            2,
             {
                 "SwitchCase": 1
             }
@@ -123,9 +124,11 @@
         "await-promise": false,
         "linebreak-style": [
             true,
-            "CRLF"
+            "LF"
         ],
         "number-literal-format": false,
-        "typedef": false
+        "typedef": false,
+        "no-string-literal": false,
+        "no-unsafe-any": false
     }
 }
